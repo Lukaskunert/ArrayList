@@ -9,11 +9,11 @@ public class Main {
         ArrayList numbers = new ArrayList();
 
         numbers.set(x, y);
-        System.out.println("" + numbers.size()); // Zjistí počet čísel v arrayi.
-        System.out.println("" + numbers.isEmpty()); // Zjistí jestli je arrray prázdný.
-        System.out.println("" + numbers.indexOf(x)); // Zjistí pozici specifického čísla.
-        System.out.println("" + numbers.get(x)); // Získá číslo.
-        System.out.println("" + numbers.contains(x)); //Zjistí jestli seznam obsahuje specifické číslo.
-        System.out.println("" + numbers.lastIndexOf(x)); //Zjistí jaký je poslední index čísla v arrayi.
+        System.out.println("Number of array: " + numbers.size());            // Zjistí počet čísel v arrayi.
+        System.out.println("Is the array empty? " + numbers.isEmpty());         // Zjistí jestli je arrray prázdný.
+        System.out.println("Position of specific number: " + numbers.indexOf(x));        // Zjistí pozici specifického čísla.
+        System.out.println("Get specific number: " + numbers.get(x));            // Získá číslo.
+        System.out.println("Does the array contain specific number? " + numbers.contains(x));       //Zjistí jestli seznam obsahuje specifické číslo.
+        System.out.println("Last index of array: " + numbers.lastIndexOf(x));    //Zjistí jaký je poslední index čísla v arrayi.
     }
 }

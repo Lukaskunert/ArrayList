@@ -1,0 +1,54 @@
+package com.company;
+public class ArrayList {
+
+    private int x;
+    int length = x;
+    private int[] array = new int[length];
+
+    public int size() {
+        int arraySize = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (i != 0) {
+                arraySize++; } }
+        return arraySize;
+    }
+
+    public boolean isEmpty() {
+        for (int i = 0; i < array.length; i++)
+            if (i != 0) {
+                return false; }
+        return true;
+    }
+
+    public int indexOf(int number) {
+        int index = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == number) {
+                index = i; } }
+        return index;
+    }
+
+    public int get(int index) {
+        return array[index];
+    }
+
+    public void set(int index, int number) {
+        array[index] = number;
+    }
+
+
+    public boolean contains(int number) {
+        for (int i = 0; i < array.length; i++)
+            if (i == number)
+                return true;
+        return false;
+    }
+
+    public int lastIndexOf(int number) {
+        int index = 0;
+        for (int i = 0; i < array.length; i++)
+            if (array[i] == number)
+                index = i;
+        return index;
+    }
+}
